@@ -38,7 +38,8 @@
     
        
       if($count == 1 && ($row[1]==$myusername && $row[2]==$mypassword)) {     
-         header("location: index-dashboard.html");
+          $_SESSION["user_login"]=$myusername;
+         header("location: dashboard.php");
       }else {
           $iconWrong="&#xf00d ";
          $error = "Your Login Name or Password is invalid";
