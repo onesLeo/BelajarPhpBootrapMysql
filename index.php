@@ -89,7 +89,7 @@
     <form class="login-form" method="post" >
       <div class="login-wrap">
         <p class="login-img"><i class="icon_lock_alt"></i></p>
-         <span class="fa"><?php if (!empty($error)){ echo $iconWrong. $error."</br></br>" ;} ?></span>        
+         <span class="fa"><?php if (!empty($error)){ echo $iconWrong. $error."</br></br>" ;}  ?></span>        
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
           <input type="text" class="form-control" placeholder="Username" autofocus name="username">
@@ -105,6 +105,7 @@
                 <input type="checkbox" value="remember-me"> Remember me
                 <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
             </label>-->
+        <span><?php if(!empty($invalidSession)){$invalidSession;} ?></span>    
         <input class="btn btn-primary btn-lg btn-block" value="Login" type="submit"/>
         <!--<input class="btn btn-info btn-lg btn-block" type="submit"/>Signup-->
       </div>

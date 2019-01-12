@@ -6,3 +6,12 @@ nah kalau masih bisa barti validasi session belum berjalan, jadi tantangannya ad
 - setelah dia sukses login, apabila dia langsung akses homepage tanpa melalui login screen bisa, karena session sudah ada
 - buat halaman logout, apabila klik button logout barti session destroy (kalian bisa cari dulu bagaimana cara men-destroy session di php)
 - apabila sudah logout coba akses lagi halaman homepage kalian apakah bisa? nah seharusnya tidak bisa
+
+
+
+>> Cara check session
+------------------------------------
+-> set dulu session di login  page
+-> waktu redirect ke homepage (dashboard.php) check paling atas sessionnya kosong atau tidak
+-> kalau kosong berarti kembalikan ke login page kalau tidak kosong berarti masuk ke homepage
+-> buat logout untuk destroy session
